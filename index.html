@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js"></script>
+    <title>Filter</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    
+    <body>
+        <div class="text-align:center">
+        <h1>Upload Image Have a Filter Fun-activity</h1>
+      </div>
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+        </script>
+        <canvas id="can"></canvas><br>
+        <div class="text-align:center">
+        <h2>Load Image</h2>
+        <input type="file" multiple="false" accept="image/*" id="finput" onchange="loadimage()"><br>
+        <h2>Choose Filter:</h2><br>
+      </div>
+        <div id="d2">
+        <input class="button1" type="button" id="b1"
+            value="Grayscale"
+            onclick="doGray()">
+        <input class="button2" type="button"
+             value="Red"
+             onclick="doRed()">
+        <input class="button3"type="button"
+             value="Rainbow"
+            onclick="doRainbow()">
+    
+        <div id="d1">
+        <input type="button"
+              value="Reset" id="b1"
+             onclick="reset()">
+        </div>
+         </div>     
+    </body>
+</head>
